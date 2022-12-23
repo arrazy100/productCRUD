@@ -16,3 +16,5 @@ RUN sed -i 's/\r$//g' /usr/src/productCRUD/entrypoint.sh
 RUN chmod +x /usr/src/productCRUD/entrypoint.sh
 
 COPY . .
+
+RUN chmod +x /usr/src/productCRUD/django-entrypoint.sh

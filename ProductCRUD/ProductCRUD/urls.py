@@ -46,12 +46,12 @@ schema_view = get_schema_view(
     ),
     public=True,
     permission_classes=[permissions.AllowAny],
-    url='http://localhost:8080/'
+    # url='http://localhost:8080'
 )
 
 swagger_urls = [
-    re_path(
-        r'^$',
+    path(
+        '',
         schema_view.with_ui('swagger', cache_timeout=0),
         name='schema-swagger-ui',
     )

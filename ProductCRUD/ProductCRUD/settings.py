@@ -133,3 +133,4 @@ STATIC_ROOT = BASE_DIR / "staticfiles/"
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CSRF_TRUSTED_ORIGINS = os.environ.get("CSRF_TRUSTED_ORIGINS", "http://localhost").split(" ")
+USE_X_FORWARDED_HOST=True

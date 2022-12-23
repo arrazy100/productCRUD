@@ -45,7 +45,7 @@ class CategoryListView(generics.ListCreateAPIView):
     ),
 )
 class ProductListView(generics.ListCreateAPIView):
-    queryset = ProductModel.objects.all().order_by('code')
+    queryset = ProductModel.objects.all().order_by('id')
     serializer_class = ProductSerializer
 
 
