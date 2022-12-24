@@ -1,21 +1,21 @@
-# Product CRUD\
-\
+# Product CRUD
+
 Clone source code aplikasi\
 `git clone https://github.com/arrazy100/productCRUD.git`\
 \
 Berpindah ke folder source code\
-`cd productCRUD`\
-\
-## Menjalankan program dengan docker-compose\
-\
+`cd productCRUD`
+
+## Menjalankan program dengan docker-compose
+
 Masukkan perintah di bawah ini ke terminal jika menjalankan pertama kali\
 `sudo docker-compose up --build`\
 \
 Masukkan perintah di bawah ini jika sudah pernah menjalankan aplikasi\
-`sudo docker-compose up`\
-\
-## Menjalankan program tanpa docker-compose\
-\
+`sudo docker-compose up`
+
+## Menjalankan program tanpa docker-compose
+
 Build image untuk Django web\
 `docker build -t web_product_crud ./ProductCRUD`\
 \
@@ -40,10 +40,10 @@ Jalankan perintah di bawah  ini untuk menghentikan program\
 `sudo docker-compose stop`\
 \
 Jalankan perintah di bawah ini untuk menghapus container\
-`sudo docker-compose down -v`\
-\
-## Menghentikan program tanpa docker-compose\
-\
+`sudo docker-compose down -v`
+
+## Menghentikan program tanpa docker-compose
+
 Jalankan perintah di bawah untuk menghentikan semua container\
 `docker stop db web nginx`\
 \
@@ -51,8 +51,8 @@ Untuk menjalankan program kembali masukkan perintah berikut\
 `docker start db web nginx`\
 \
 Jalankan perintah di bawah untuk menghapus container\
-`docker rm db web nginx`\
-\
-## Membuka website Product CRUD\
-\
+`docker rm db web nginx`
+
+## Membuka website Product CRUD
+
 Buka browser dan masukkan url berikut `http://localhost:8000`
