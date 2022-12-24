@@ -34,8 +34,8 @@ Run docker container untuk web Django\
 Run docker container untuk nginx\
 `docker run -v static_volume:/usr/src/productCRUD/staticfiles/ -p 8000:8000 --network app_net --link web:web --name nginx nginx_product_crud`
 
-## Menghentikan program dengan docker-compose\
-\
+## Menghentikan program dengan docker-compose
+
 Jalankan perintah di bawah  ini untuk menghentikan program\
 `sudo docker-compose stop`\
 \
