@@ -32,8 +32,8 @@ Run docker container untuk web Django\
 `docker run -v static_volume:/usr/src/productCRUD/staticfiles/ --expose 8000 --env-file ./.env.dev --restart always --network app_net --link db:db --name web web_product_crud /bin/sh -c /usr/src/productCRUD/django-entrypoint.sh`\
 \
 Run docker container untuk nginx\
-`docker run -v static_volume:/usr/src/productCRUD/staticfiles/ -p 8000:8000 --network app_net --link web:web --name nginx nginx_product_crud`\
-\
+`docker run -v static_volume:/usr/src/productCRUD/staticfiles/ -p 8000:8000 --network app_net --link web:web --name nginx nginx_product_crud`
+
 ## Menghentikan program dengan docker-compose\
 \
 Jalankan perintah di bawah  ini untuk menghentikan program\
@@ -55,4 +55,4 @@ Jalankan perintah di bawah untuk menghapus container\
 
 ## Membuka website Product CRUD
 
-Buka browser dan masukkan url berikut `http://localhost:8000`
+Buka browser dan masukkan url berikut [http://localhost:8000](http://localhost:8000)
